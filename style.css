@@ -1,0 +1,300 @@
+/* -------------------------------------------------------
+   GLOBAL STYLES
+-------------------------------------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #05070A;
+    color: #E4ECF7;
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    border-radius: 12px;
+}
+
+.section {
+    padding: 100px 12%;
+    position: relative;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    color: #6AB8FF;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-left: 6px solid #6AB8FF;
+    padding-left: 14px;
+}
+
+
+/* -------------------------------------------------------
+   HERO SECTION
+-------------------------------------------------------- */
+
+#hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.45) saturate(1.3);
+}
+
+.hero-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.5) 0%,
+        rgba(0,0,0,0.7) 40%,
+        rgba(0,0,0,0.9) 100%
+    );
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 12%;
+    left: 10%;
+    max-width: 700px;
+    z-index: 10;
+}
+
+.hero-content h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    color: #6AB8FF;
+    text-shadow: 0 0 20px #003B66;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-top: 5px;
+    color: #9DD8FF;
+}
+
+.tagline {
+    margin-top: 25px;
+    font-size: 1.2rem;
+    opacity: 0.85;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 30px;
+    background: #6AB8FF;
+    color: #05070A;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.cta-button:hover {
+    background: white;
+    color: #000;
+}
+
+
+/* -------------------------------------------------------
+   GALLERIES & GRID
+-------------------------------------------------------- */
+
+.gallery {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-img {
+    width: 30%;
+    min-width: 280px;
+    border-radius: 14px;
+    border: 1px solid #1B283A;
+    transition: 0.3s;
+}
+
+.gallery-img:hover {
+    transform: scale(1.03);
+    border-color: #6AB8FF;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background: #0C1017;
+    padding: 25px;
+    border-radius: 14px;
+    border: 1px solid #141B28;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #6AB8FF;
+}
+
+
+/* -------------------------------------------------------
+   BOOK GRID
+-------------------------------------------------------- */
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+
+.book-grid img {
+    border: 1px solid #1A2435;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.book-grid img:hover {
+    transform: scale(1.04);
+    border-color: #6AB8FF;
+}
+
+
+/* -------------------------------------------------------
+   SECRET OMNISCIENTRIX PANEL
+-------------------------------------------------------- */
+
+.secret-box {
+    background: #0B0F15;
+    padding: 40px;
+    border-radius: 14px;
+    border: 1px solid #1A2430;
+    text-align: center;
+}
+
+.secret-box h3 {
+    color: #6AB8FF;
+    margin-bottom: 15px;
+}
+
+.secret-box .secret-small {
+    margin-top: 15px;
+    opacity: 0.4;
+    font-size: 0.9rem;
+}
+
+
+/* -------------------------------------------------------
+   CONTACT
+-------------------------------------------------------- */
+
+.contact-box {
+    background: #0C1017;
+    padding: 40px;
+    border-radius: 14px;
+    border: 1px solid #141B28;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-box input,
+.contact-box textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    background: #0A0D13;
+    border: 1px solid #1A2435;
+    border-radius: 8px;
+    color: #E4ECF7;
+}
+
+.contact-box button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    background: #6AB8FF;
+    border: none;
+    border-radius: 8px;
+    color: #05070A;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-box button:hover {
+    background: white;
+    color: #000;
+}
+
+
+/* -------------------------------------------------------
+   FOOTER
+-------------------------------------------------------- */
+
+footer {
+    padding: 50px;
+    text-align: center;
+    opacity: 0.6;
+    font-size: 0.9rem;
+}
+
+
+/* -------------------------------------------------------
+   FADE-IN ANIMATION
+-------------------------------------------------------- */
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1.1s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* -------------------------------------------------------
+   RESPONSIVE
+-------------------------------------------------------- */
+
+@media(max-width: 900px) {
+    .hero-content h1 {
+        font-size: 3rem;
+    }
+    .hero-content h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media(max-width: 600px) {
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+    .hero-content {
+        bottom: 15%;
+    }
+}
